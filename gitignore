@@ -1,0 +1,34 @@
+# ==========================================
+# Operating System Files
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# Codium / VS Code Workspace Settings
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.tmp
+
+# ==========================================
+# Environment & Secret Files
+# ==========================================
+# Keeps API keys and machine-specific configs out of Git
+.env
+.env.local
+.env.*.local
+
+# ==========================================
+# Logs & Temporary Files
+# ==========================================
+*.log
+*.tmp
+
+# ==========================================
+# Translation Backups
+# ==========================================
+*.po~
+*.mo~

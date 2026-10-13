@@ -1,0 +1,116 @@
+/**
+ * Stylesheet: Codeally - PDF Link
+ */
+
+/* ==========================================================================
+   1. Block Style parameters
+   ========================================================================== */
+
+
+ /* Vertical Alignment Variants (Row Layouts) */
+:where(.wp-block-cdly-pdf-link).is-style-top {
+  --_align-items: flex-start;
+}
+:where(.wp-block-cdly-pdf-link).is-style-center {
+  --_align-items: center;
+}
+:where(.wp-block-cdly-pdf-link).is-style-bottom {
+  --_align-items: flex-end;
+}
+
+/* Below Variant (Column Layout) */
+:where(.wp-block-cdly-pdf-link).is-style-below {
+  --_direction: column;
+  --_align-self: flex-end;
+  --_align-items: center;
+  --_text-align: center;
+}
+
+/* ==========================================================================
+   2. Block Root & Visual Thumbnail
+   ========================================================================== */
+
+.wp-block-cdly-pdf-link {
+  --_thumb-width: var(--cdly-pdf-width, 2.5em);
+  --_gap: var(--cdly-pdf-gap, 0.5em);
+  --_shadow: var(--cdly-pdf-shadow,
+      drop-shadow(0 2px 3px rgba(0, 0, 0, 0.06))
+      drop-shadow(0 4px 5px rgba(0, 0, 0, 0.08))
+  );
+  --_hover: var(--cdly-pdf-hover, saturate(115%) contrast(115%));
+
+  display: flex;
+  flex-direction: var(--_direction, row);
+  align-self: var(--_align-self, inherit);
+  align-items: var(--_align-items, flex-start);
+  gap: var(--_gap);
+  text-align: var(--_text-align, inherit);
+  box-sizing: border-box;
+}
+
+/* Thumbnail Visual (Bottom Layer) */
+.wp-block-cdly-pdf-link::before {
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  width: var(--_thumb-width);
+  aspect-ratio: var(--cdly-pdf-ratio, 192 / 272);
+  background: var(--cdly-pdf-thumb-url) top center / contain no-repeat;
+  border-radius: 2px;
+  filter: var(--_shadow);
+  transition: filter 0.15s ease;
+}
+
+/* ==========================================================================
+   3. Link & Clickable Hit-Box
+   ========================================================================== */
+
+.cdly-pdf-link__link {
+  position: relative; /* Restricts hit-box relative to text position, respecting container padding */
+}
+
+/* Base Hit-Box (Default Row Layouts: top/center/bottom) */
+.cdly-pdf-link__link::before {
+  content: "";
+  position: absolute;
+  inset-inline-end: calc(100% + var(--_gap));
+  width: var(--_thumb-width);
+  aspect-ratio: var(--cdly-pdf-ratio, 192 / 272);
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Alignment Adjustments for Row Layouts */
+:where(.wp-block-cdly-pdf-link).is-style-top .cdly-pdf-link__link::before {
+  top: 0;
+}
+:where(.wp-block-cdly-pdf-link).is-style-center .cdly-pdf-link__link::before {
+  top: 50%;
+  transform: translateY(-50%);
+}
+:where(.wp-block-cdly-pdf-link).is-style-bottom .cdly-pdf-link__link::before {
+  bottom: 0;
+}
+
+/* Hit-Box Override for Column Layout (Link Below) */
+:where(.wp-block-cdly-pdf-link).is-style-below .cdly-pdf-link__link::before {
+  top: auto;
+  bottom: calc(100% + var(--_gap));
+  inset-inline-end: auto;
+  inset-inline-start: 50%;
+  transform: translateX(-50%);
+}
+
+/* ==========================================================================
+   4. Interactions & Editor Overrides
+   ========================================================================== */
+
+.cdly-pdf-link__link:hover {
+  text-decoration: underline;
+}
+.wp-block-cdly-pdf-link:has(.cdly-pdf-link__link:hover)::before {
+  filter: var(--_shadow) var(--_hover);
+}
+.editor-styles-wrapper .cdly-pdf-link__link {
+  pointer-events: none;
+}

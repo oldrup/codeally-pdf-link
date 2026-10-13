@@ -1,0 +1,84 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "cdly/pdf-link",
+  "title": "PDF Link",
+  "category": "media",
+  "icon": "pdf",
+  "description": "Displays a PDF document link using its Media Library thumbnail preview.",
+  "textdomain": "cdly-pdf-link",
+
+  "supports": {
+    "html": false,
+    "anchor": true,
+    "color": {
+      "text": true,
+      "background": true,
+      "link": false
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": false
+    },
+    "spacing": {
+      "margin": false,
+      "padding": true,
+      "blockGap": false
+    },
+    "dimensions": {
+      "aspectRatio": false,
+      "minHeight": false
+    }
+  },
+
+  "styles": [
+    {
+      "name": "top",
+      "label": "Link Top",
+      "isDefault": true
+    },
+    {
+      "name": "center",
+      "label": "Link Center"
+    },
+    {
+      "name": "bottom",
+      "label": "Link Bottom"
+    },
+    {
+      "name": "below",
+      "label": "Link Below"
+    }
+  ],
+
+  "attributes": {
+    "fileId": {
+      "type": "number",
+      "default": 0
+    },
+    "relativeFileUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "fileTitle": {
+      "type": "string",
+      "default": ""
+    },
+    "relativeThumbUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "width": {
+      "type": "number",
+      "default": 192
+    },
+    "height": {
+      "type": "number",
+      "default": 272
+    }
+  },
+
+  "editorScript": "file:./editor.js",
+  "style": "file:./style.css",
+  "render": "file:./render.php"
+}
