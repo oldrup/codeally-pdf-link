@@ -1,9 +1,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Codeally - PDF Link\n"
+"Project-Id-Version: Codeally PDF Link\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-29 09:25+0000\n"
+"POT-Creation-Date: 2026-10-14 12:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -14,14 +14,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.8.8; wp-7.0.4; php-8.3.29\n"
-"X-Domain: cdly-pdf-link"
+"X-Domain: codeally-pdf-link"
 
 #: render.php:55 editor.js:122 editor.js:160
 msgid "(PDF)"
-msgstr ""
-
-#. Author of the plugin
-msgid "Bjarne Oldrup"
 msgstr ""
 
 #: block.json:1
@@ -54,29 +50,35 @@ msgctxt "block title"
 msgid "PDF Link"
 msgstr ""
 
-#. Name of the plugin
-#: editor.js:95
-msgid "Codeally - PDF Link"
+#. Author of the plugin
+msgid "Codeally"
 msgstr ""
 
-#: cdly-pdf-link.php:59
-msgid "Codeally - PDF Link:"
+#. Name of the plugin
+#: editor.js:95
+msgid "Codeally PDF Link"
+msgstr ""
+
+#: codeally-pdf-link.php:59
+msgid "Codeally PDF Link:"
 msgstr ""
 
 #. Description of the plugin
-msgid "Displays a PDF document link using its Media Library thumbnail preview."
+msgid ""
+"Displays a PDF document link using its Media Library thumbnail preview using "
+"CSS only."
 msgstr ""
 
 #: render.php:38 editor.js:45
 msgid "Download Document"
 msgstr ""
 
-#. URI of the plugin
-msgid "https://github.com/oldrup/cdly-pdf-link"
+#. Author URI of the plugin
+msgid "https://codeally.dk"
 msgstr ""
 
-#. Author URI of the plugin
-msgid "https://oldrup.dk/"
+#. URI of the plugin
+msgid "https://github.com/oldrup/codeally-pdf-link"
 msgstr ""
 
 #: editor.js:80
@@ -95,7 +97,7 @@ msgstr ""
 msgid "Select PDF Link"
 msgstr ""
 
-#: cdly-pdf-link.php:60
+#: codeally-pdf-link.php:60
 msgid ""
 "Your server environment is missing Imagick or Ghostscript. The plugin will "
 "still function, but will display a generic fallback icon instead of a PDF "

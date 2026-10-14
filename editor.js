@@ -1,5 +1,5 @@
 /**
- * Editor Script: Codeally - PDF Link
+ * Editor Script: Codeally PDF Link
  *
  * Native, build-step-free Gutenberg block script using vanilla WordPress dependencies.
  */
@@ -42,7 +42,7 @@
                 setAttributes( {
                     fileId: media.id,
                     relativeFileUrl: getRelativePath( media.url ),
-                    fileTitle: media.title || media.filename || __( 'Download Document', 'cdly-pdf-link' ),
+                    fileTitle: media.title || media.filename || __( 'Download Document', 'codeally-pdf-link' ),
                     relativeThumbUrl: getRelativePath( thumb ? thumb.url : ( media.icon || '' ) ),
                     width: thumb ? thumb.width : 192,
                     height: thumb ? thumb.height : 272,
@@ -65,8 +65,8 @@
                                 onClick: obj.open,
                             },
                             fileId 
-                                ? __( 'Replace PDF Link', 'cdly-pdf-link' ) 
-                                : __( 'Select PDF Link', 'cdly-pdf-link' )
+                                ? __( 'Replace PDF Link', 'codeally-pdf-link' )
+                                : __( 'Select PDF Link', 'codeally-pdf-link' )
                         );
                     },
                 } )
@@ -77,7 +77,7 @@
                 {},
                 el(
                     PanelBody,
-                    { title: __( 'PDF Settings', 'cdly-pdf-link' ), initialOpen: true },
+                    { title: __( 'PDF Settings', 'codeally-pdf-link' ), initialOpen: true },
                     mediaPickerButton
                 )
             );
@@ -92,8 +92,8 @@
                         Placeholder,
                         {
                             icon: 'pdf',
-                            label: __( 'Codeally - PDF Link', 'cdly-pdf-link' ),
-                            instructions: __( 'Select a PDF Link from the media library to generate the preview link.', 'cdly-pdf-link' ),
+                            label: __( 'Codeally PDF Link', 'codeally-pdf-link' ),
+                            instructions: __( 'Select a PDF Link from the media library to generate the preview link.', 'codeally-pdf-link' ),
                         },
                         mediaPickerButton
                     )
@@ -119,7 +119,7 @@
                     el(
                         'span',
                         { className: 'screen-reader-text' },
-                        ' ' + __( '(PDF)', 'cdly-pdf-link' )
+                        ' ' + __( '(PDF)', 'codeally-pdf-link' )
                     )
                 )
             );
@@ -157,7 +157,7 @@
                     el(
                         'span',
                         { className: 'screen-reader-text' },
-                        ' ' + __( '(PDF)', 'cdly-pdf-link' )
+                        ' ' + __( '(PDF)', 'codeally-pdf-link' )
                     )
                 )
             );

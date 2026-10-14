@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Codeally - PDF Link1.0.0\n"
+"Project-Id-Version: Codeally PDF Link1.0.0\n"
 "Report-Msgid-Bugs-To: mailto:oldrup@proton.me\n"
 "POT-Creation-Date: 2026-08-12 07:54+0000\n"
 "PO-Revision-Date: 2026-08-29 09:28+0000\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.8.8; wp-7.1; php-8.3.29\n"
-"X-Domain: cdly-pdf-link\n"
+"X-Domain: codeally-pdf-link\n"
 "Language: da_DK\n"
 "Plural-Forms: nplurals=2; plural=n != 1;"
 
@@ -57,12 +57,12 @@ msgstr "PDF fil"
 
 #. Name of the plugin
 #: editor.js:95
-msgid "Codeally - PDF Link"
-msgstr "Codeally - PDF Link"
+msgid "Codeally PDF Link"
+msgstr "Codeally PDF Link"
 
-#: cdly-pdf-link.php:59
-msgid "Codeally - PDF Link:"
-msgstr "Codeally - PDF Link:"
+#: codeally-pdf-link.php:59
+msgid "Codeally PDF Link:"
+msgstr "Codeally PDF Link:"
 
 #. Description of the plugin
 msgid "Displays a PDF document link using its Media Library thumbnail preview."
@@ -75,8 +75,8 @@ msgid "Download Document"
 msgstr "Hent dokument"
 
 #. URI of the plugin
-msgid "https://github.com/oldrup/cdly-pdf-link"
-msgstr "https://github.com/oldrup/cdly-pdf-link"
+msgid "https://github.com/oldrup/codeally-pdf-link"
+msgstr "https://github.com/oldrup/codeally-pdf-link"
 
 #. Author URI of the plugin
 msgid "https://oldrup.dk/"
@@ -98,7 +98,7 @@ msgstr "Vælg et PDF-link fra mediebiblioteket for at generere eksempellinket."
 msgid "Select PDF Link"
 msgstr "Vælg PDF Link"
 
-#: cdly-pdf-link.php:60
+#: codeally-pdf-link.php:60
 msgid ""
 "Your server environment is missing Imagick or Ghostscript. The plugin will "
 "still function, but will display a generic fallback icon instead of a PDF "

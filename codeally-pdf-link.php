@@ -1,16 +1,16 @@
 <?php
 /**
- * Plugin Name:       Codeally - PDF Link
- * Plugin URI:        https://github.com/oldrup/cdly-pdf-link
- * Description:       Displays a PDF document link using its Media Library thumbnail preview.
- * Version:           1.3.0-beta.1
- * Requires at least: 6.5
+ * Plugin Name:       Codeally PDF Link
+ * Plugin URI:        https://github.com/oldrup/codeally-pdf-link
+ * Description:       Displays a PDF document link using its Media Library thumbnail preview using CSS only.
+ * Version:           1.4.0
+ * Requires at least: 6.9
  * Requires PHP:      8.2
- * Author:            Bjarne Oldrup
- * Author URI:        https://oldrup.dk/ 
+ * Author:            Codeally
+ * Author URI:        https://codeally.dk
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       cdly-pdf-link
+ * Text Domain:       codeally-pdf-link
  * Domain Path:       /languages
  */
 
@@ -29,7 +29,7 @@ add_action( 'init', static function (): void {
     // Enqueue JS translation files from /languages directory
     if ( $block_type && ! empty( $block_type->editor_script_handles ) ) {
         foreach ( $block_type->editor_script_handles as $handle ) {
-            wp_set_script_translations( $handle, 'cdly-pdf-link', plugin_dir_path( __FILE__ ) . 'languages' );
+            wp_set_script_translations( $handle, 'codeally-pdf-link', plugin_dir_path( __FILE__ ) . 'languages' );
         }
     }
 } );
@@ -56,8 +56,8 @@ add_action( 'admin_notices', static function (): void {
     ?>
     <div class="notice notice-info is-dismissible">
         <p>
-            <strong><?php esc_html_e( 'Codeally - PDF Link:', 'cdly-pdf-link' ); ?></strong>
-            <?php esc_html_e( 'Your server environment is missing Imagick or Ghostscript. The plugin will still function, but will display a generic fallback icon instead of a PDF thumbnail.', 'cdly-pdf-link' ); ?>
+            <strong><?php esc_html_e( 'Codeally PDF Link:', 'codeally-pdf-link' ); ?></strong>
+            <?php esc_html_e( 'Your server environment is missing Imagick or Ghostscript. The plugin will still function, but will display a generic fallback icon instead of a PDF thumbnail.', 'codeally-pdf-link' ); ?>
         </p>
     </div>
     <?php

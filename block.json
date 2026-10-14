@@ -6,7 +6,7 @@
   "category": "media",
   "icon": "pdf",
   "description": "Displays a PDF document link using its Media Library thumbnail preview.",
-  "textdomain": "cdly-pdf-link",
+  "textdomain": "codeally-pdf-link",
 
   "supports": {
     "html": false,

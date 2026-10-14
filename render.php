@@ -1,6 +1,6 @@
 <?php
 /**
- * Dynamic Block Template: Codeally - PDF Link
+ * Dynamic Block Template: Codeally PDF Link
  *
  * Runs when the plugin is enabled. Queries live database information via fileId
  * so media library title/file updates are reflected automatically across the site.
@@ -35,7 +35,7 @@ if ( str_contains( $src, 'wp-includes/images/media/' ) ) {
 }
 
 $file_url   = wp_get_attachment_url( $file_id ) ?: '';
-$file_title = get_the_title( $file_id ) ?: __( 'Download Document', 'cdly-pdf-link' );
+$file_title = get_the_title( $file_id ) ?: __( 'Download Document', 'codeally-pdf-link' );
 ?>
 
 <div <?php
@@ -52,7 +52,7 @@ $file_title = get_the_title( $file_id ) ?: __( 'Download Document', 'cdly-pdf-li
     <a href="<?php echo esc_url( $file_url ); ?>" class="cdly-pdf-link__link" type="application/pdf">
         <?php echo esc_html( $file_title ); ?>
         <span class="screen-reader-text">
-            <?php echo esc_html__( '(PDF)', 'cdly-pdf-link' ); ?>
+            <?php echo esc_html__( '(PDF)', 'codeally-pdf-link' ); ?>
         </span>
     </a>
 </div>
