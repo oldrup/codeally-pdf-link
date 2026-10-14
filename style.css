@@ -30,7 +30,30 @@
    2. Block Root & Visual Thumbnail
    ========================================================================== */
 
-.wp-block-cdly-pdf-link {
+/* Optional size classes use 2.5 times the matching theme font-size preset.
+   Set --cdly-pdf-width directly for a custom size or when a preset is unavailable. */
+  .wp-block-cdly-pdf-link.cdly-pdf-link--small {
+    --cdly-pdf-width: calc(2.5 * var(--wp--preset--font-size--small));
+  }
+
+  .wp-block-cdly-pdf-link.cdly-pdf-link--medium {
+    --cdly-pdf-width: calc(2.5 * var(--wp--preset--font-size--medium));
+  }
+
+  .wp-block-cdly-pdf-link.cdly-pdf-link--large {
+    --cdly-pdf-width: calc(2.5 * var(--wp--preset--font-size--large));
+  }
+
+  .wp-block-cdly-pdf-link.cdly-pdf-link--x-large {
+    --cdly-pdf-width: calc(2.5 * var(--wp--preset--font-size--x-large));
+  }
+
+  .wp-block-cdly-pdf-link.cdly-pdf-link--xx-large {
+    --cdly-pdf-width: calc(2.5 * var(--wp--preset--font-size--xx-large));
+  }
+
+
+  .wp-block-cdly-pdf-link {
   --_thumb-width: var(--cdly-pdf-width, 2.5em);
   --_gap: var(--cdly-pdf-gap, 0.5em);
   --_shadow: var(--cdly-pdf-shadow,

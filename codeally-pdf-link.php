@@ -3,7 +3,7 @@
  * Plugin Name:       Codeally PDF Link
  * Plugin URI:        https://github.com/oldrup/codeally-pdf-link
  * Description:       Displays a PDF document link using its Media Library thumbnail preview using CSS only.
- * Version:           1.4.0
+ * Version:           1.5.0
  * Requires at least: 6.9
  * Requires PHP:      8.2
  * Author:            Codeally
