@@ -19,11 +19,11 @@ Developed by [Bjarne Oldrup](https://oldrup.dk/) and sponsored by [Codeally](htt
 
 ## Screenshots
 
-![The PDF Link block in the Gutenberg editor](assets/screenshot-1-block-editor.png)
+![The PDF Link block in the Gutenberg editor](assets/screenshot-1.png)
 
 ## Installation
 
-1. Install **Codeally PDF Link** from the WordPress Plugins screen, or upload the plugin folder to `/wp-content/plugins/`.
+1. Upload the plugin folder to `/wp-content/plugins/`.
 2. Activate the plugin, add a **PDF Link** block, and select a PDF from the Media Library.
 
 ## Customize thumbnail styling
@@ -36,7 +36,7 @@ Add one of these optional classes under the block's **Advanced > Additional CSS 
 - `cdly-pdf-link--x-large`
 - `cdly-pdf-link--xx-large`
 
-The theme must define the matching preset. Alternatively, set these CSS custom properties on the block or an ancestor:
+The theme must define the matching preset. Alternatively, set these CSS custom properties on the block or parent:
 
 | Property | Purpose | Default |
 | --- | --- | --- |
@@ -62,7 +62,7 @@ For example:
 - Keyboard navigation and screen-reader behavior have been tested with Windows Narrator and NVDA.
 - The generated front-end markup is valid HTML, and the plugin passes WordPress Plugin Check.
 
-As of September 2026, the plugin has been tested with Twenty Twenty-Five, Greyd, and Ollie (Full Site Editing themes), and Blocksy, Kadence, and GeneratePress (classic themes).
+As of October 2026, the plugin has been tested with Twenty Twenty-Five, Greyd, and Ollie (Full Site Editing themes), and Blocksy, Kadence, and GeneratePress (classic themes).
 
 ## Frequently asked questions
 
